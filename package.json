@@ -1,0 +1,22 @@
+{
+    "name": "linear-theme",
+    "displayName": "Linear Theme",
+    "description": "A theme based on and inspired by the colors used by linear.app",
+    "version": "0.0.1",
+    "semanticHighlighting": true,
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Linear Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Linear Theme-color-theme.json"
+            }
+        ]
+    }
+}

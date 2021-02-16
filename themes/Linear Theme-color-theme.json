@@ -109,6 +109,15 @@
 			}
 		},
 		{
+			"name": "Properties",
+			"scope": [
+				"variable.other.property",
+			],
+			"settings": {
+				"foreground": "#f3b7e9"
+			}
+		},
+		{
 			"name": "Colors",
 			"scope": [
 				"constant.other.color"
@@ -131,13 +140,23 @@
 			"name": "Keyword, Storage",
 			"scope": [
 				"keyword",
-				"storage.type",
+        "storage.type",
+				"storage.modifier"
+			],
+			"settings": {
+        "fontStyle": "",
+				"foreground": "#7681df"
+				// "foreground": "#26B5CE"
+			}
+		},
+		{
+			"name": "Storage",
+			"scope": [
+        "storage.type",
 				"storage.modifier"
 			],
 			"settings": {
         // "fontStyle": "italic",
-				"foreground": "#7681df"
-				// "foreground": "#26B5CE"
 			}
 		},
 		{
@@ -145,18 +164,36 @@
 			"scope": [
 				"constant.other.color",
 				"punctuation",
-				"meta.tag",
 				"punctuation.definition.tag",
 				"punctuation.separator.inheritance.php",
-				"punctuation.definition.tag.html",
-				"punctuation.definition.tag.begin.html",
-				"punctuation.definition.tag.end.html",
 				"punctuation.section.embedded",
 				"keyword.other.template",
-				"keyword.other.substitution"
+				"keyword.other.substitution",
+        "meta.brace",
 			],
 			"settings": {
 				"foreground": "#5da6b8"
+			}
+		},
+		{
+			"name": "Tag Wrappers",
+			"scope": [
+				"punctuation.definition.tag.html",
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html",
+				"meta.tag",
+			],
+			"settings": {
+				"foreground": "#74829e"
+			}
+		},
+		{
+			"name": "HTML Text",
+			"scope": [
+				"text.html"
+			],
+			"settings": {
+				"foreground": "#b6bdc7"
 			}
 		},
 		{
@@ -166,7 +203,18 @@
 			],
 			"settings": {
 				// "foreground": "#b2aafa"
+        "fontStyle": "",
 				"foreground": "#beb7ff"
+			}
+		},
+		{
+			"name": "Operator, Misc",
+			"scope": [
+				"keyword.control.flow",
+				"keyword.control.export",
+			],
+			"settings": {
+        "fontStyle": "italic",
 			}
 		},
 		{
@@ -177,7 +225,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#a8c3e2"
+				"foreground": "#83acf8"
 			}
 		},
 		{
@@ -190,8 +238,10 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				// "foreground": "#26B5CE",
-				"foreground": "#e791ab",
+				// "foreground": "#40c4e6",
+				"foreground": "#26B5CE",
+				// "foreground": "#e791ab",
+				// "foreground": "#f5afcf",
 				// "foreground": "#26cec6"
 			}
 		},
@@ -215,7 +265,7 @@
 			}
 		},
 		{
-			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+			"name": "Number, Constant, Tag Attribute, Embedded",
 			"scope": [
 				"constant.numeric",
 				"constant.language",
@@ -227,7 +277,17 @@
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#F2994A"
+				"foreground": "#ecad76"
+			}
+		},
+		{
+			"name": "Function Argument",
+			"scope": [
+				"variable.parameter",
+			],
+			"settings": {
+        "fontStyle": "italic",
+				"foreground": "#8ebbff"
 			}
 		},
 		{
@@ -243,7 +303,8 @@
 			],
 			"settings": {
 				// "foreground": "#5abb92"
-				"foreground": "#66c2a3"
+        // "fontStyle": "italic",
+				"foreground": "#61bb91"
 			}
 		},
 		{
@@ -268,7 +329,7 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#B2CCD6"
+				"foreground": "#a8bfc9"
 			}
 		},
 		{
@@ -332,6 +393,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
+        "fontStyle": "italic",
 				"foreground": "#cba0ff"
 			}
 		},
@@ -343,7 +405,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#FFCB6B"
+				"foreground": "#cba0ff"
 			}
 		},
 		{
@@ -717,6 +779,6 @@
 			"settings": {
 				"foreground": "#EEFFFF"
 			}
-		}
+		},
 	]
 }

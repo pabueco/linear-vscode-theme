@@ -291,7 +291,6 @@
 				"constant.character",
 				"constant.escape",
 				"variable.parameter",
-				"keyword.other.unit",
 				"keyword.other"
 			],
 			"settings": {
@@ -514,19 +513,11 @@
 		},
 
     {
-			"name": "JSON",
+			"name": "Property names",
 			"scope": [
-				"support.type.property-name.json"
-			],
-			"settings": {
-				"fontStyle": "",
-        "foreground": "#b3cacf"
-			}
-		},
-    {
-			"name": "JSON",
-			"scope": [
-				"support.other.namespace",
+				"support.type.property-name.json",
+        "meta.objectliteral",
+        "meta.",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -547,14 +538,25 @@
         "foreground": "#748d92"
 			}
 		},
+
+    // CSS
     // {
-		// 	"name": "extends SomeClass",
+		// 	"name": "Attribute value",
 		// 	"scope": [
-		// 		"entity.other.inherited-class",
+		// 		"meta.property-list meta.property-value support.constant",
 		// 	],
 		// 	"settings": {
-		// 		"foreground": "#cfaa64"
+		// 		"foreground": "#d4af8f"
 		// 	}
 		// },
+    {
+			"name": "Attribute value unit",
+			"scope": [
+				"keyword.other.unit",
+			],
+			"settings": {
+				"foreground": "#d3782e"
+			}
+		},
 	]
 }

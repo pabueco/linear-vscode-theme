@@ -365,6 +365,7 @@
 				"source.postcss support.type.property-name"
 			],
 			"settings": {
+        "fontStyle": "",
 				"foreground": "#B2CCD6"
 			}
 		},

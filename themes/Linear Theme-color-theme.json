@@ -290,7 +290,6 @@
 				"support.constant",
 				"constant.character",
 				"constant.escape",
-				"variable.parameter",
 				"keyword.other"
 			],
 			"settings": {
@@ -304,7 +303,7 @@
 			],
 			"settings": {
         "fontStyle": "italic",
-				"foreground": "#8ebbff"
+				"foreground": "#83acf8"
 			}
 		},
 		{
@@ -336,7 +335,7 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#ffcc6d"
+				"foreground": "#e9cb72"
 			}
 		},
 		{

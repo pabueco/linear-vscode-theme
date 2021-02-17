@@ -514,6 +514,17 @@
 			}
 		},
 
+    {
+			"name": "JSON",
+			"scope": [
+				"support.type.property-name.json"
+			],
+			"settings": {
+				"fontStyle": "",
+        "foreground": "#b3cacf"
+			}
+		},
+
     // PHP
     // {
 		// 	"name": "extends SomeClass",

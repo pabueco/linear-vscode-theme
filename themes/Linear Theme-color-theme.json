@@ -215,7 +215,8 @@
 			"name": "Operator, Misc",
 			"scope": [
 				"keyword.control",
-        "entity.name.type.namespace"
+        "entity.name.type.namespace",
+        "keyword.other"
 			],
 			"settings": {
 				// "foreground": "#b2aafa"
@@ -290,7 +291,6 @@
 				"support.constant",
 				"constant.character",
 				"constant.escape",
-				"keyword.other"
 			],
 			"settings": {
 				"foreground": "#ecad76"
@@ -302,7 +302,7 @@
 				"variable.parameter",
 			],
 			"settings": {
-        "fontStyle": "italic",
+        // "fontStyle": "italic",
 				"foreground": "#83acf8"
 			}
 		},
@@ -331,11 +331,12 @@
 				"support.type",
 				"support.class",
 				"markup.changed.git_gutter",
-				"support.type.sys-types"
+				"support.type.sys-types",
+        "support.constant"
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#e9cb72"
+				"foreground": "#a8f2ff"
 			}
 		},
 		{
@@ -535,6 +536,16 @@
 			"settings": {
 				"fontStyle": "",
         "foreground": "#748d92"
+			}
+		},
+    {
+			"name": "Namespaces",
+			"scope": [
+        "entity.name.type.namespace",
+			],
+			"settings": {
+				"fontStyle": "",
+        "foreground": "#a8f2ff"
 			}
 		},
 

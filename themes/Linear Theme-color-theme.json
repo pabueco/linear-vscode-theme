@@ -220,7 +220,7 @@
 			],
 			"settings": {
 				// "foreground": "#b2aafa"
-        "fontStyle": "",
+        // "fontStyle": "",
 				"foreground": "#beb7ff"
 			}
 		},
@@ -291,6 +291,7 @@
 				"support.constant",
 				"constant.character",
 				"constant.escape",
+        "support.constant.property-value"
 			],
 			"settings": {
 				"foreground": "#ecad76"
@@ -349,23 +350,8 @@
 			],
 			"settings": {
         "fontStyle": "italic",
-				"foreground": "#85a8b8"
+				"foreground": "#9ebecc"
 				// "foreground": "#dbbd84"
-			}
-		},
-		{
-			"name": "CSS Class and Support",
-			"scope": [
-				"source.css support.type.property-name",
-				"source.sass support.type.property-name",
-				"source.scss support.type.property-name",
-				"source.less support.type.property-name",
-				"source.stylus support.type.property-name",
-				"source.postcss support.type.property-name"
-			],
-			"settings": {
-        "fontStyle": "",
-				"foreground": "#B2CCD6"
 			}
 		},
 		{
@@ -517,11 +503,16 @@
 			"scope": [
 				"support.type.property-name.json",
         "meta.objectliteral",
-        "meta.",
+        "source.css support.type.property-name",
+				"source.sass support.type.property-name",
+				"source.scss support.type.property-name",
+				"source.less support.type.property-name",
+				"source.stylus support.type.property-name",
+				"source.postcss support.type.property-name"
 			],
 			"settings": {
 				"fontStyle": "",
-        "foreground": "#b3cacf"
+        "foreground": "#b1c5ca"
 			}
 		},
     
@@ -550,15 +541,6 @@
 		},
 
     // CSS
-    // {
-		// 	"name": "Attribute value",
-		// 	"scope": [
-		// 		"meta.property-list meta.property-value support.constant",
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#d4af8f"
-		// 	}
-		// },
     {
 			"name": "Attribute value unit",
 			"scope": [

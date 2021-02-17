@@ -215,6 +215,7 @@
 			"name": "Operator, Misc",
 			"scope": [
 				"keyword.control",
+        "entity.name.type.namespace"
 			],
 			"settings": {
 				// "foreground": "#b2aafa"
@@ -331,9 +332,6 @@
 				"entity.name.type.class",
 				"support.type",
 				"support.class",
-				"support.orther.namespace.use.php",
-				"meta.use.php",
-				"support.other.namespace.php",
 				"markup.changed.git_gutter",
 				"support.type.sys-types"
 			],
@@ -524,8 +522,30 @@
         "foreground": "#b3cacf"
 			}
 		},
-
+    {
+			"name": "JSON",
+			"scope": [
+				"support.other.namespace",
+			],
+			"settings": {
+				"fontStyle": "",
+        "foreground": "#b3cacf"
+			}
+		},
+    
     // PHP
+    {
+			"name": "Namespaces",
+			"scope": [
+        "support.orther.namespace.use.php",
+				"meta.use.php",
+				"support.other.namespace.php",
+			],
+			"settings": {
+				"fontStyle": "",
+        "foreground": "#748d92"
+			}
+		},
     // {
 		// 	"name": "extends SomeClass",
 		// 	"scope": [

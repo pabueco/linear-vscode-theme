@@ -273,7 +273,8 @@
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block variable.other"
+				"variable.other",
+        "variable.parameter"
 			],
 			"settings": {
 				"foreground": "#d5e4e7"
@@ -303,16 +304,16 @@
 				"foreground": "#ecad76"
 			}
 		},
-		{
-			"name": "Function Argument",
-			"scope": [
-				"variable.parameter",
-			],
-			"settings": {
-        // "fontStyle": "italic",
-				"foreground": "#83acf8"
-			}
-		},
+		// {
+		// 	"name": "Function Argument",
+		// 	"scope": [
+		// 		"variable.parameter",
+		// 	],
+		// 	"settings": {
+    //     // "fontStyle": "italic",
+		// 		"foreground": "#83acf8"
+		// 	}
+		// },
 		{
 			"name": "String, Symbols, Markup Heading",
 			"scope": [
@@ -369,17 +370,6 @@
 			"settings": {
         "fontStyle": "",
 				"foreground": "#9ebecc"
-			}
-		},
-		{
-			"name": "Sub-methods",
-			"scope": [
-				"entity.name.module.js",
-				"variable.import.parameter.js",
-				"variable.other.class.js"
-			],
-			"settings": {
-				"foreground": "#FF5370"
 			}
 		},
 		{

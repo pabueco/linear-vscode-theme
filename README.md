@@ -1,13 +1,7 @@
-# README
-## This is the README for your extension "linear-theme"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# Linear Theme
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+A Visual Studio Code theme inspired by the issue tracking tool [Linear](https://linear.app/). Most colors used in this theme are based on colors used in it's interface, but have been slightly adjusted for an improved coding experience. 
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy!**
+#
+![Preview](images/preview.png)

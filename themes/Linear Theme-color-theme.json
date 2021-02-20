@@ -26,6 +26,8 @@
 		"editor.background": "#1F2023",
 		"editor.foreground": "#d5e4e7",
 
+    "peekViewEditor.background": "#27282B",
+
     "dropdown.background": "#27282B",
     "dropdown.border": "#141516",
 
@@ -176,6 +178,7 @@
         "meta.brace",
 			],
 			"settings": {
+        "fontStyle": "",
 				"foreground": "#5da6b8"
 			}
 		},
@@ -230,7 +233,10 @@
 				"keyword.control.flow",
 				"keyword.control.export",
         "keyword.control.return",
-        "meta.function.closure"
+        "meta.function.closure",
+        "keyword.control.import",
+        "keyword.control.from",
+        "keyword.other.namespace",
 			],
 			"settings": {
         "fontStyle": "italic",
@@ -308,12 +314,11 @@
 			}
 		},
 		{
-			"name": "String, Symbols, Inherited Class, Markup Heading",
+			"name": "String, Symbols, Markup Heading",
 			"scope": [
 				"string",
 				"constant.other.symbol",
 				"constant.other.key",
-				"entity.other.inherited-class",
 				"markup.heading",
 				"markup.inserted.git_gutter",
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
@@ -333,7 +338,8 @@
 				"support.class",
 				"markup.changed.git_gutter",
 				"support.type.sys-types",
-        "support.constant"
+        "support.constant",
+        "entity.name.type.namespace",
 			],
 			"settings": {
         "fontStyle": "",
@@ -346,12 +352,23 @@
 				"support.type",
         "meta.return.type",
         "entity.name.type",
-        "entity.other.inherited-class"
+        "meta.use.php",
 			],
 			"settings": {
         "fontStyle": "italic",
 				"foreground": "#9ebecc"
-				// "foreground": "#dbbd84"
+			}
+		},
+		{
+			"name": "Namespaces and Classes",
+			"scope": [
+        "entity.other.inherited-class",
+        "support.orther.namespace.use",
+				"support.other.namespace",
+			],
+			"settings": {
+        "fontStyle": "",
+				"foreground": "#9ebecc"
 			}
 		},
 		{
@@ -515,32 +532,7 @@
         "foreground": "#b1c5ca"
 			}
 		},
-    
-    // PHP
-    {
-			"name": "Namespaces",
-			"scope": [
-        "support.orther.namespace.use.php",
-				"meta.use.php",
-				"support.other.namespace.php",
-			],
-			"settings": {
-				"fontStyle": "",
-        "foreground": "#748d92"
-			}
-		},
-    {
-			"name": "Namespaces",
-			"scope": [
-        "entity.name.type.namespace",
-			],
-			"settings": {
-				"fontStyle": "",
-        "foreground": "#a8f2ff"
-			}
-		},
 
-    // CSS
     {
 			"name": "Attribute value unit",
 			"scope": [

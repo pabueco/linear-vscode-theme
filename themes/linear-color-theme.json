@@ -406,10 +406,20 @@
         "meta.return.type",
         "entity.name.type",
         "meta.use.php",
+        // "meta.type.tuple meta.brace",
 			],
 			"settings": {
         "fontStyle": "italic",
-				"foreground": "#9ebecc"
+				"foreground": "#9ef0ff"
+			}
+		},
+		{
+			"name": "Entity Types",
+			"scope": [
+        "meta.type.tuple meta.brace",
+			],
+			"settings": {
+        "fontStyle": "italic",
 			}
 		},
 		{

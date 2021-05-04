@@ -119,6 +119,16 @@
 			}
 		},
 		{
+			"name": "Parameters",
+			"scope": [
+        "variable.parameter",
+			],
+			"settings": {
+				// "fontStyle": "italic",
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "Properties",
 			"scope": [
         "constant.other.class",

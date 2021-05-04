@@ -4,6 +4,7 @@
 	"colors": {
 
     "terminal.ansiGreen": "#4CB782",
+    "terminal.ansiBrightGreen": "#8dd387",
     "terminal.ansiMagenta": "#cba0ff",
     "terminal.ansiYellow": "#ffcc6d",
     "terminal.ansiCyan": "#26B5CE",

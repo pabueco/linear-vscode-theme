@@ -356,7 +356,6 @@
 			"name": "String, Symbols, Markup Heading",
 			"scope": [
 				"string",
-				"string punctuation",
 				"constant.other.symbol",
 				"constant.other.key",
 				"markup.heading",
@@ -374,13 +373,13 @@
 		{
 			"name": "String Quotes",
 			"scope": [
-				"string punctuation",
+				"string punctuation.definition.string",
 			],
 			"settings": {
 				// "foreground": "#61bb9194"
 				// "foreground": "#4CB782"
 				// "foreground": "#ffcb8b9d"
-				"foreground": "#88d581b7"
+				"foreground": "#88d581bd"
 			}
 		},
 		{

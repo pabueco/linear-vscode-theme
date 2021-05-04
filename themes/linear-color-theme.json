@@ -133,10 +133,20 @@
 			"scope": [
         "constant.other.class",
 				"variable.other.property",
-        "support.variable.property"
+				"variable.other.object.property"
 			],
 			"settings": {
 				"foreground": "#f3b7e9"
+				// "foreground": "#f7c1ca"
+			}
+		},
+		{
+			"name": "Properties",
+			"scope": [
+        "support.variable.property"
+			],
+			"settings": {
+				"foreground": "#ffcdf8"
 				// "foreground": "#f7c1ca"
 			}
 		},

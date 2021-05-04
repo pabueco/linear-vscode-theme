@@ -595,5 +595,54 @@
 				// "foreground": "#65bda0"
 			}
 		},
+
+    // dotenv
+    {
+			"name": "Attribute value unit",
+			"scope": [
+				"source.env",
+			],
+			"settings": {
+				"foreground": "#8dd387"
+			}
+		},
+
+    // Markdown
+    {
+			"name": "Attribute value unit",
+			"scope": [
+				"text.html.markdown",
+			],
+			"settings": {
+				"foreground": "#dde8eb"
+			}
+		},
+    {
+			"name": "Markdown Text",
+			"scope": [
+				"string.other.link.title.markdown",
+			],
+			"settings": {
+				"foreground": "#dde8eb"
+			}
+		},
+    {
+			"name": "Markdown Link",
+			"scope": [
+				"markup.underline.link.markdown",
+			],
+			"settings": {
+				"foreground": "#bef5ff"
+			}
+		},
+    {
+			"name": "Markdown Link",
+			"scope": [
+				"markup.fenced_code.block.markdown",
+			],
+			"settings": {
+				"foreground": "#8DD387"
+			}
+		},
 	]
 }

@@ -112,7 +112,8 @@
 				"variable",
         "variable.other",
         "variable.parameter",
-				"string constant.other.placeholder"
+				"string constant.other.placeholder",
+				"source.vue meta.object.member.ts meta.object.member.ts",
 			],
 			"settings": {
 				// "foreground": "#d5e4e7"
@@ -573,6 +574,7 @@
 			"scope": [
 				"support.type.property-name.json",
         "meta.objectliteral",
+        "source.vue meta.object.member.ts meta.object.member.ts meta.object.member.ts",
         "source.css support.type.property-name",
 				"source.sass support.type.property-name",
 				"source.scss support.type.property-name",

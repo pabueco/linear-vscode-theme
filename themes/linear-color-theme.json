@@ -379,9 +379,13 @@
 			"settings": {
 				// "foreground": "#61bb91"
 				// "foreground": "#4CB782"
-				// "foreground": "#FFCB8B"
+				// "foreground": "#FFCB8B",
+				// "foreground": "#ffd18b",
+
 				// "foreground": "#a0d581"
-				"foreground": "#8dd387"
+				// "foreground": "#8dd387"
+
+				"foreground": "#97D484"
 			}
 		},
 		{
@@ -393,7 +397,7 @@
 				// "foreground": "#61bb9194"
 				// "foreground": "#4CB782"
 				// "foreground": "#ffcb8b9d"
-				"foreground": "#88d581bd"
+				"foreground": "#95d581bd"
 			}
 		},
 		{

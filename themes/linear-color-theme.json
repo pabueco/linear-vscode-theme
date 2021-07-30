@@ -296,6 +296,7 @@
         "meta.function.closure",
         "keyword.control.import",
         "keyword.control.from",
+        "keyword.control.as",
         "keyword.other.namespace",
 			],
 			"settings": {

@@ -186,6 +186,7 @@
 			"name": "Keyword, Storage",
 			"scope": [
         "keyword.operator",
+        "keyword.definition",
 				// "storage.type.function.arrow"
 			],
 			"settings": {
@@ -193,6 +194,17 @@
 				// "foreground": "#1ABDDA",
 				// "foreground": "#7FDBCA"
 				"foreground": "#8e82f8"
+			}
+		},
+		{
+			"name": "Comparison",
+			"scope": [
+        "keyword.operator.comparison",
+        "keyword.operator.logical",
+			],
+			"settings": {
+				"foreground": "#a89fff"
+				// "foreground": "#beb7ff"
 			}
 		},
 		{

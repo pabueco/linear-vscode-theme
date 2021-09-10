@@ -415,6 +415,9 @@
 				"support.type.sys-types",
         "support.constant",
         "entity.name.type.namespace",
+        // Custom tags (like vue components)
+        "meta.tag.custom entity.name.tag.html",
+        "source.vue invalid.illegal.unrecognized-tag.html"
 			],
 			"settings": {
         "fontStyle": "",

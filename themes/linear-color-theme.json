@@ -604,7 +604,8 @@
 				"source.scss support.type.property-name",
 				"source.less support.type.property-name",
 				"source.stylus support.type.property-name",
-				"source.postcss support.type.property-name"
+				"source.postcss support.type.property-name",
+        "entity.name.tag.yaml"
 			],
 			"settings": {
 				"fontStyle": "",

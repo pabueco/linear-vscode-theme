@@ -237,7 +237,9 @@
 				"keyword.other.template",
 				"keyword.other.substitution",
         "meta.brace",
-        "punctuation.support.type.property-name"
+        "punctuation.support.type.property-name",
+        "expression.embbeded punctuation.definition.tag.begin.html",
+        "expression.embbeded punctuation.definition.tag.end.html",
 			],
 			"settings": {
         "fontStyle": "",
@@ -259,7 +261,7 @@
 				"punctuation.definition.tag.html",
 				"punctuation.definition.tag.begin.html",
 				"punctuation.definition.tag.end.html",
-				"meta.tag",
+				// "meta.tag",
 			],
 			"settings": {
 				"foreground": "#74829e"

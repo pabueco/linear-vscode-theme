@@ -270,7 +270,8 @@
 		{
 			"name": "HTML Text",
 			"scope": [
-				"text.html"
+				"text.html",
+        "meta.jsx.children.js"
 			],
 			"settings": {
 				"foreground": "#bdc4cc"

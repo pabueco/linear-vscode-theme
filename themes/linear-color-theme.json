@@ -4,7 +4,7 @@
 	"colors": {
 
     "terminal.ansiGreen": "#4CB782",
-    "terminal.ansiBrightGreen": "#8dd387",
+    "terminal.ansiBrightGreen": "#97D484",
     "terminal.ansiMagenta": "#cba0ff",
     "terminal.ansiYellow": "#ffcc6d",
     "terminal.ansiCyan": "#26B5CE",
@@ -627,7 +627,7 @@
 				"source.env",
 			],
 			"settings": {
-				"foreground": "#8dd387"
+				"foreground": "#97D484"
 			}
 		},
 
@@ -665,7 +665,7 @@
 				"markup.fenced_code.block.markdown",
 			],
 			"settings": {
-				"foreground": "#8DD387"
+				"foreground": "#97D484"
 			}
 		},
 	]

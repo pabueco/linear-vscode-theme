@@ -4,7 +4,7 @@
 	"colors": {
 
     "terminal.ansiGreen": "#4CB782",
-    "terminal.ansiBrightGreen": "#8dd387",
+    "terminal.ansiBrightGreen": "#97D484",
     "terminal.ansiMagenta": "#cba0ff",
     "terminal.ansiYellow": "#ffcc6d",
     "terminal.ansiCyan": "#26B5CE",
@@ -237,7 +237,9 @@
 				"keyword.other.template",
 				"keyword.other.substitution",
         "meta.brace",
-        "punctuation.support.type.property-name"
+        "punctuation.support.type.property-name",
+        "expression.embbeded punctuation.definition.tag.begin.html",
+        "expression.embbeded punctuation.definition.tag.end.html",
 			],
 			"settings": {
         "fontStyle": "",
@@ -259,7 +261,7 @@
 				"punctuation.definition.tag.html",
 				"punctuation.definition.tag.begin.html",
 				"punctuation.definition.tag.end.html",
-				"meta.tag",
+				// "meta.tag",
 			],
 			"settings": {
 				"foreground": "#74829e"
@@ -268,7 +270,8 @@
 		{
 			"name": "HTML Text",
 			"scope": [
-				"text.html"
+				"text.html",
+        "meta.jsx.children.js"
 			],
 			"settings": {
 				"foreground": "#bdc4cc"
@@ -412,6 +415,9 @@
 				"support.type.sys-types",
         "support.constant",
         "entity.name.type.namespace",
+        // Custom tags (like vue components)
+        "meta.tag.custom entity.name.tag.html",
+        "source.vue invalid.illegal.unrecognized-tag.html"
 			],
 			"settings": {
         "fontStyle": "",
@@ -601,7 +607,8 @@
 				"source.scss support.type.property-name",
 				"source.less support.type.property-name",
 				"source.stylus support.type.property-name",
-				"source.postcss support.type.property-name"
+				"source.postcss support.type.property-name",
+        "entity.name.tag.yaml"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -627,7 +634,7 @@
 				"source.env",
 			],
 			"settings": {
-				"foreground": "#8dd387"
+				"foreground": "#97D484"
 			}
 		},
 
@@ -665,7 +672,7 @@
 				"markup.fenced_code.block.markdown",
 			],
 			"settings": {
-				"foreground": "#8DD387"
+				"foreground": "#97D484"
 			}
 		},
 	]

@@ -469,7 +469,7 @@ module.exports = (themeColors) => {
           "markup.inserted"
         ],
         "settings": {
-          "foreground": "#C3E88D"
+          "foreground": colors.ui.git.inserted.default
         }
       },
       {
@@ -478,7 +478,7 @@ module.exports = (themeColors) => {
           "markup.deleted"
         ],
         "settings": {
-          "foreground": colors.tokens.invalidDeleted
+          "foreground": colors.ui.git.deleted.default
         }
       },
       {
@@ -487,7 +487,7 @@ module.exports = (themeColors) => {
           "markup.changed"
         ],
         "settings": {
-          "foreground": "#26B5CE"
+          "foreground": colors.ui.git.modified.default
         }
       },
       {

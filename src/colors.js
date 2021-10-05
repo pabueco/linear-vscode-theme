@@ -41,6 +41,17 @@ module.exports = {
       ansiCyan: "#26B5CE",
       ansiRed: colorRed,
     },
+    git: {
+      inserted: {
+        default: "#97D484",
+      },
+      modified: {
+        default: "#26B5CE",
+      },
+      deleted: {
+        default: colorRed,
+      },
+    }
   },
   tokens: {
     comment: "#8a8f98",

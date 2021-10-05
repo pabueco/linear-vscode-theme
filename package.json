@@ -6,8 +6,8 @@
     "publisher": "pabue",
     "license": "MIT",
     "repository": {
-      "type": "git",
-      "url": "https://github.com/pabueco/linear-vscode-theme.git"
+        "type": "git",
+        "url": "https://github.com/pabueco/linear-vscode-theme.git"
     },
     "semanticHighlighting": true,
     "engines": {
@@ -28,10 +28,21 @@
     "contributes": {
         "themes": [
             {
-                "label": "Linear Theme",
+                "label": "Linear Theme - Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/linear-color-theme.json"
+                "path": "./dist/linear-theme-dark.json"
+            },
+            {
+                "label": "Linear Theme - Dark Variant",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-dark-variant.json"
             }
         ]
+    },
+    "dependencies": {
+        "lodash": "^4.17.21"
+    },
+    "scripts": {
+      "dev": "nodemon src/scripts/build.js --ignore dist/"
     }
 }

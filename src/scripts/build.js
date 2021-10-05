@@ -19,9 +19,9 @@ fs.readdirSync(dirs.themes).forEach(file => {
 
 for (const theme of themes) {
 
-  const themeMap = require(theme.path)
+  const themeColors = require(theme.path)
 
-  const generatedTheme = require('../template')(themeMap)
+  const generatedTheme = require('../template')(themeColors)
 
   generatedTheme.name = 'Linear Theme'
 

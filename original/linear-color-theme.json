@@ -61,7 +61,7 @@
 
     "editorWidget.background": "#27282B",
     "editorSuggestWidget.highlightForeground": "#8f9aff",
-    "editorSuggestWidget.selectedBackground": "#33353d",
+    "editorSuggestWidget.selectedBackground": "#2D2F36",
 
     // "tab.activeBorder": "#5E6AD2",
     "tab.activeBorderTop": "#5E6AD2",
@@ -320,8 +320,9 @@
 		{
 			"name": "Function, Special Method",
 			"scope": [
-				"entity.name.function",
-				"meta.function-call",
+				// "entity.name.function",
+				"meta.function-call entity.name.function",
+				"meta.method-call entity.name.function",
 				"variable.function",
 				"support.function",
 				"keyword.other.special-method"
@@ -439,7 +440,7 @@
 			"settings": {
         "fontStyle": "italic",
 				// "foreground": "#9ef0ff"
-				"foreground": "#86dfd0"
+				"foreground": "#88e6d6"
 			}
 		},
 		{
@@ -476,11 +477,10 @@
 		{
 			"name": "entity.name.method.js",
 			"scope": [
-				"entity.name.method.js"
+				"meta.function entity.name.function"
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#82AAFF"
+				"foreground": "#61e6fd"
 			}
 		},
 		{
@@ -550,7 +550,7 @@
 				"markup.changed"
 			],
 			"settings": {
-				"foreground": "#26B5CE"
+				"foreground": "#e632b0"
 			}
 		},
 		{

@@ -5,7 +5,9 @@ module.exports = {
   colors: {
     
   },
-  tokenColors: {
-    ...colors,
+  tokens: {
+    string: "#ffd18b",
+    stringPunctuation: "#ffcb8b9d",
+    constNumber: "#97D484"
   }
 }

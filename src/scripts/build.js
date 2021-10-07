@@ -17,13 +17,19 @@ fs.readdirSync(dirs.themes).forEach(file => {
   })
 });
 
+const template = require('../template')
+
 for (const theme of themes) {
 
-  const themeColors = require(theme.path)
+  const themeConfig = require(theme.path)
 
-  const generatedTheme = require('../template')(themeColors)
+  const generatedTheme = template.render(themeConfig)
 
-  generatedTheme.name = 'Linear Theme'
+  generatedTheme.name = `Linear Theme - ${themeConfig.name}`
 
-  fs.writeFileSync(path.resolve(dirs.dist, `${themeName}-${theme.name}.json`), JSON.stringify(generatedTheme, null, 2) , 'utf-8');
+  fs.writeFileSync(
+    path.resolve(dirs.dist, `${themeName}-${theme.name}.json`), 
+    JSON.stringify(generatedTheme, null, 2),
+    'utf-8'
+  );
 }

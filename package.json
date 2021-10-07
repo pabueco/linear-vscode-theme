@@ -36,6 +36,21 @@
                 "label": "Linear Theme - Dark Variant",
                 "uiTheme": "vs-dark",
                 "path": "./dist/linear-theme-dark-variant.json"
+            },
+            {
+                "label": "Linear Theme - Dawn",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-dawn.json"
+            },
+            {
+                "label": "Linear Theme - Pale",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-pale.json"
+            },
+            {
+                "label": "Linear Theme - Midnight",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-midnight.json"
             }
         ]
     },
@@ -43,6 +58,11 @@
         "lodash": "^4.17.21"
     },
     "scripts": {
-      "dev": "nodemon src/scripts/build.js --ignore dist/"
+        "dev": "nodemon src/scripts/build.js --ignore dist/"
+    },
+    "devDependencies": {
+        "@ctrl/tinycolor": "^3.4.0",
+        "chroma-js": "^2.1.2",
+        "deepdash": "^5.3.9"
     }
 }

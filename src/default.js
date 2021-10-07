@@ -3,6 +3,9 @@ const colorRed = "#eb5757"
 module.exports = {
   type: "dark",
   ui: {
+    text: {
+      default: undefined
+    },
     primary: {
       default: "#5E6AD2",
       shade: "#717CE1",
@@ -11,13 +14,14 @@ module.exports = {
     },
     base: {
       "0": "#1F2023",
-      "1": "#27282B",
-      "2": "#2D2F36",
-      "3": "#303236",
-      "4": "#3b3c42",
-      "5": "#53575c",
-      "6": "#6b6f75",
-      "9": "#d5e4e7"
+      "100": "#27282B",
+      "150": "#2a2b30",
+      "200": "#2D2F36",
+      "300": "#303236",
+      "400": "#3b3c42",
+      "500": "#53575c",
+      "600": "#6b6f75",
+      "900": "#d5e4e7"
     },
     selection: {
       background: "#7847ff98",
@@ -78,5 +82,12 @@ module.exports = {
     sassAmpersand: "#5fdfff",
     this: "#a8f2ff",
     tag: "#83acf8"
+  },
+  components: {
+    editor: undefined,
+    panel: undefined,
+    border: undefined,
+    lineHighlight: undefined,
+    lineNumber: undefined,
   }
 }

@@ -65,8 +65,8 @@ module.exports = {
         "editor.wordHighlightBorder": colors.ui.selection.highlightBorder,
         "editor.hoverHighlightBackground": colors.ui.base['400'],
     
-        "editor.lineHighlightBackground": colors.ui.base['150'],
-        "editor.lineHighlightBorder": colors.ui.base['150'],
+        "editor.lineHighlightBackground": colors.ui.base['100'],
+        "editor.lineHighlightBorder": colors.ui.base['100'],
     
         "editorWhitespace.foreground": colors.ui.base['400'],
         "editorRuler.foreground": colors.ui.base['400'],

@@ -11,7 +11,7 @@ const theme = makeTheme('#6e79d6', '#f7faff', {
     let c = color.clone()
     
     // while (!isReadable(c, '#fff')) {
-    while (readability(c, '#fff') < 3.4) {
+    while (readability(c, '#fff') < 3.55) {
       // c.l -= 0.01
       c = c.darken(0.5)
       c = c.saturate(0.5)
@@ -26,7 +26,7 @@ const theme = makeTheme('#6e79d6', '#f7faff', {
 }, {
   ui: {
     base: {
-      "0"  : '#ffffff',
+      "0"  : '#FBFBFB',
     }
   },
   tokens: {

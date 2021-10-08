@@ -74,7 +74,7 @@ class Theme {
           "900": this.makeShade(9).toHexString(),
         },
         cursor: {
-          default: this.primaryColor.clone().brighten(10).saturate(10).toHexString()
+          default: (this.options.invert ? this.primaryColor.clone().darken(21).desaturate(10) : this.primaryColor.clone().brighten(42).saturate(10)).toHexString()
         },
         selection: {
           background: this.primaryColor.saturate(25).brighten(5).setAlpha((this.options.brightnessStart + 0.25) * this.options.opacityModifier).toHex8String(),

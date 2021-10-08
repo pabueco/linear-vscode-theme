@@ -32,7 +32,7 @@ module.exports = {
       property: '#c638a2'
     },
     components: {
-      panel: '#EDEEF3',
+      panel: theme.makeShade(1.25).toHexString(),
       border: theme.makeShade(2.5).toHexString()
     }
   })

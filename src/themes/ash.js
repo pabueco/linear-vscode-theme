@@ -6,7 +6,7 @@ const theme = new Theme('#475ba1', '#EDEEF3', {
   invert: true,
   brightnessStart: 0.05,
   brightnessStep: 0.035,
-  opacityModifier: 0.65,
+  opacityModifier: 1,
   colorTransform: (color) => {
     let c = color.clone()
     

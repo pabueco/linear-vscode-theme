@@ -77,8 +77,8 @@ class Theme {
           default: this.primaryColor.clone().brighten(10).saturate(10).toHexString()
         },
         selection: {
-          background: this.primaryColor.saturate(25).setAlpha((this.options.brightnessStart + 0.2) * this.options.opacityModifier).toHex8String(),
-          highlightBackground: this.primaryColor.saturate(25).setAlpha((this.options.brightnessStart + 0.05) * this.options.opacityModifier).toHex8String(),
+          background: this.primaryColor.saturate(25).brighten(5).setAlpha((this.options.brightnessStart + 0.25) * this.options.opacityModifier).toHex8String(),
+          highlightBackground: this.primaryColor.saturate(25).brighten(0).setAlpha((this.options.brightnessStart + 0.1) * this.options.opacityModifier).toHex8String(),
           highlightBorder: this.primaryColor.saturate(25).brighten(5).toHex8String(),
         },
       },

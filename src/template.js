@@ -102,11 +102,12 @@ module.exports = {
         
         "editorGroupHeader.tabsBorder": colors.components.border,
     
-        "list.activeSelectionBackground": colors.ui.base['150'],
+        "list.activeSelectionBackground": colors.ui.base['200'],
         "list.activeSelectionForeground": colors.ui.primary.lighter,
         "list.inactiveSelectionBackground": colors.ui.base['150'],
         "list.inactiveSelectionForeground": colors.ui.primary.lighter,
         "list.hoverBackground": colors.ui.base['200'],
+        "list.focusBackground": colors.ui.base['200'],
     
         "gitDecoration.modifiedResourceForeground": colors.ui.terminal.ansiCyan,
         "gitDecoration.deletedResourceForeground": colors.ui.error.default,

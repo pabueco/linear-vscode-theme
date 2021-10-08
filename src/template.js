@@ -1,5 +1,5 @@
 const { cloneDeep, merge } = require('lodash')
-// const defaultColors = require('./default')
+const defaultColors = require('./default')
 
 module.exports = {
   render: (themeColors) => {
@@ -7,8 +7,8 @@ module.exports = {
     /**
      * @type defaultColors
      */
-    // const colors = merge({}, defaultColors, themeColors)
     const colors = cloneDeep(themeColors)
+    // const colors = merge({}, defaultColors, themeColors)
   
     return {
       type: colors.type,
@@ -90,6 +90,7 @@ module.exports = {
         "tab.activeBorderTop": colors.ui.primary.default,
         "tab.activeBackground": colors.ui.base['150'],
         "tab.inactiveBackground": colors.ui.base['0'],
+        "tab.border": colors.components.border,
     
         "editorGroupHeader.tabsBackground": colors.ui.base['0'],
         "editorGroupHeader.border": colors.ui.base['100'],

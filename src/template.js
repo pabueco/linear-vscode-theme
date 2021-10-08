@@ -48,6 +48,8 @@ module.exports = {
         
         "sideBar.background": colors.components.panel || colors.ui.base['0'],
         "sideBar.border": colors.components.border,
+
+        "sideBarSectionHeader.background": colors.ui.base['200'],
   
         "activityBar.background": colors.components.panel || colors.ui.base['0'],
         "activityBar.foreground": colors.ui.text.default,

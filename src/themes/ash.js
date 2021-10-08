@@ -4,7 +4,7 @@ const { readability } = require('@ctrl/tinycolor');
 
 const theme = new Theme('#475ba1', '#EDEEF3', {
   invert: true,
-  brightnessStart: 0.05,
+  brightnessStart: 0.01,
   brightnessStep: 0.035,
   opacityModifier: 1,
   colorTransform: (color) => {

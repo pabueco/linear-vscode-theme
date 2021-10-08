@@ -1,7 +1,7 @@
 {
     "name": "linear-theme",
     "displayName": "Linear Theme",
-    "description": "A pleasant theme inspired by Linear",
+    "description": "A set of pleasant themes inspired by Linear",
     "version": "0.4.0",
     "publisher": "pabue",
     "license": "MIT",
@@ -56,6 +56,11 @@
                 "label": "Linear Theme - Light",
                 "uiTheme": "vs",
                 "path": "./dist/linear-theme-light.json"
+            },
+            {
+                "label": "Linear Theme - Ash",
+                "uiTheme": "vs",
+                "path": "./dist/linear-theme-ash.json"
             }
         ]
     },

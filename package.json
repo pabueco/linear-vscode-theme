@@ -51,6 +51,11 @@
                 "label": "Linear Theme - Midnight",
                 "uiTheme": "vs-dark",
                 "path": "./dist/linear-theme-midnight.json"
+            },
+            {
+                "label": "Linear Theme - Light",
+                "uiTheme": "vs",
+                "path": "./dist/linear-theme-light.json"
             }
         ]
     },

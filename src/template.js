@@ -39,7 +39,7 @@ module.exports = {
         "inputValidation.errorBorder": colors.ui.error.default,
     
         "editor.background": colors.components.editor || colors.ui.base['0'],
-        "editor.foreground": colors.ui.base['900'],
+        "editor.foreground": colors.ui.text.default,
     
         "peekViewEditor.background": colors.ui.base['100'],
     
@@ -50,6 +50,7 @@ module.exports = {
         "sideBar.border": colors.components.border,
   
         "activityBar.background": colors.components.panel || colors.ui.base['0'],
+        "activityBar.foreground": colors.ui.text.default,
         "activityBar.border": colors.components.border,
         "activityBar.activeBorder": colors.ui.primary.default,
   

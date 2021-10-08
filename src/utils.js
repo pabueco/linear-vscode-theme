@@ -15,6 +15,8 @@ module.exports = {
       brightnessStart: 0.16,
       brightnessStep: 0.04,
       saturation: 0.15,
+      invert: false,
+      tokenColorTransform: null
     })
 
     const makeShade = (steps, color = baseColor, s = mergedOptions.saturation, l = null) => {
@@ -22,32 +24,37 @@ module.exports = {
       const hsl = c.toHsl()
       hsl.s = mergedOptions.saturation
       hsl.l = l || mergedOptions.brightnessStart + (steps * mergedOptions.brightnessStep)
+
+      if (mergedOptions.invert) {
+        hsl.l = 1 - hsl.l
+      }
+
       return new TinyColor(hsl)
     }
 
-    // const adjustedDefaultColors = mapValuesDeep(
-    //   cloneDeep(defaultColors),
-    //   (v) => {
-    //     const c = new TinyColor(v)
-    //     if (!c.isValid) {
-    //       return v
-    //     }
+    // const c = new TinyColor(v)
+    // if (!c.isValid) {
+    //   return v
+    // }
 
-    //     return c.mix(baseColorPure, 50).toHexString()
-    //   },
-    //   { leavesOnly: true }
-    // );
+    // return c.mix(baseColorPure, 50).toHexString()
 
-    return merge(cloneDeep({}), cloneDeep(defaultColors), {
+    const adjustedTokens = mergedOptions.tokenColorTransform ? mapValuesDeep(
+      cloneDeep(defaultColors.tokens),
+      (v) => mergedOptions.tokenColorTransform(new TinyColor(v)).toHexString(),
+      { leavesOnly: true }
+    ) : defaultColors.tokens;
+
+    return merge(cloneDeep({}), cloneDeep({ ...defaultColors, tokens: { ...adjustedTokens } }), {
       ui: {
         text: {
           default: makeShade(16).toHexString()
         },
         primary: {
           default: primaryColor.toHexString(),
-          shade: primaryColor.clone().brighten(8).toHexString(),
-          light: primaryColor.clone().brighten(16).toHexString(),
-          lighter: primaryColor.clone().brighten(24).toHexString(),
+          shade: (mergedOptions.invert ? primaryColor.darken(5) : primaryColor.brighten(8)).toHexString(),
+          light: (mergedOptions.invert ? primaryColor.darken(10) : primaryColor.brighten(16)).toHexString(),
+          lighter: (mergedOptions.invert ? primaryColor.darken(15) : primaryColor.brighten(24)).toHexString(),
         },
         base: {
           "0"  : makeShade(0).toHexString(),
@@ -69,6 +76,7 @@ module.exports = {
 
       tokens: {
         comment: makeShade(11).toHexString(),
+        variable: makeShade(19).toHexString(),
       },
 
       components: {

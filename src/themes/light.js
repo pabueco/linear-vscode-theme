@@ -6,7 +6,7 @@ const theme = makeTheme('#6e79d6', '#f7faff', {
   invert: true,
   brightnessStart: 0.01,
   brightnessStep: 0.035,
-  tokenColorTransform: (color) => {
+  colorTransform: (color) => {
     // const c = color.clone().toHsl()
     let c = color.clone()
     

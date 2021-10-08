@@ -16,7 +16,7 @@ module.exports = {
       brightnessStep: 0.04,
       saturation: 0.15,
       invert: false,
-      tokenColorTransform: null
+      colorTransform: null
     })
 
     const makeShade = (steps, color = baseColor, s = mergedOptions.saturation, l = null) => {
@@ -39,13 +39,17 @@ module.exports = {
 
     // return c.mix(baseColorPure, 50).toHexString()
 
-    const adjustedTokens = mergedOptions.tokenColorTransform ? mapValuesDeep(
-      cloneDeep(defaultColors.tokens),
-      (v) => mergedOptions.tokenColorTransform(new TinyColor(v)).toHexString(),
+    const adjustedColors = mergedOptions.colorTransform ? mapValuesDeep(
+      cloneDeep(defaultColors),
+      (v) => {
+        const c = new TinyColor(v)
+        if (!c.isValid) return v
+        return mergedOptions.colorTransform(c).toHexString()
+      },
       { leavesOnly: true }
-    ) : defaultColors.tokens;
+    ) : defaultColors;
 
-    return merge(cloneDeep({}), cloneDeep({ ...defaultColors, tokens: { ...adjustedTokens } }), {
+    return merge(cloneDeep({}), cloneDeep({ ...adjustedColors }), {
       ui: {
         text: {
           default: makeShade(16).toHexString()

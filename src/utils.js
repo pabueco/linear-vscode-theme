@@ -16,7 +16,8 @@ module.exports = {
       brightnessStep: 0.04,
       saturation: 0.15,
       invert: false,
-      colorTransform: null
+      colorTransform: null,
+      opacityModifier: 1
     })
 
     const makeShade = (steps, color = baseColor, s = mergedOptions.saturation, l = null) => {
@@ -32,12 +33,15 @@ module.exports = {
       return new TinyColor(hsl)
     }
 
-    // const c = new TinyColor(v)
-    // if (!c.isValid) {
-    //   return v
-    // }
-
-    // return c.mix(baseColorPure, 50).toHexString()
+    // const mixedColors = mapValuesDeep(
+    //   cloneDeep(defaultColors),
+    //   (v) => {
+    //     const c = new TinyColor(v)
+    //     if (!c.isValid) return v
+    //     return c.mix(primaryColor, 10).toHexString()
+    //   },
+    //   { leavesOnly: true }
+    // );
 
     const adjustedColors = mergedOptions.colorTransform ? mapValuesDeep(
       cloneDeep(defaultColors),
@@ -61,7 +65,7 @@ module.exports = {
           lighter: (mergedOptions.invert ? primaryColor.darken(15) : primaryColor.brighten(24)).toHexString(),
         },
         base: {
-          "0"  : makeShade(0).toHexString(),
+          "0": makeShade(0).toHexString(),
           "100": makeShade(1).toHexString(),
           "150": makeShade(1.5).toHexString(),
           "200": makeShade(2).toHexString(),
@@ -75,6 +79,11 @@ module.exports = {
         },
         cursor: {
           default: primaryColor.clone().brighten(10).saturate(10).toHexString()
+        },
+        selection: {
+          background: primaryColor.saturate(25).setAlpha((mergedOptions.brightnessStart + 0.2) * mergedOptions.opacityModifier).toHex8String(),
+          highlightBackground: primaryColor.saturate(25).setAlpha((mergedOptions.brightnessStart + 0.05) * mergedOptions.opacityModifier).toHex8String(),
+          highlightBorder: primaryColor.saturate(25).brighten(5).toHex8String(),
         },
       },
 

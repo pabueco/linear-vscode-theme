@@ -67,6 +67,10 @@ module.exports = {
         },
       },
 
+      tokens: {
+        comment: makeShade(11).toHexString(),
+      },
+
       components: {
         border: makeShade(1.5).toHexString(),
       }

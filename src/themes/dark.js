@@ -1,6 +1,6 @@
-const { makeTheme } = require('../utils')
+const { Theme } = require('../theme')
 
-const theme = makeTheme('#5e6ad2', '#1F2023', {
+const theme = new Theme('#5e6ad2', '#1F2023', {
   saturation: 0.06,
   brightnessStart: 0.13
 })
@@ -8,5 +8,5 @@ const theme = makeTheme('#5e6ad2', '#1F2023', {
 module.exports = {
   name: 'Dark',
   type: 'dark',
-  ...theme
+  ...theme.make()
 }

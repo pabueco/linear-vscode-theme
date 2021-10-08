@@ -27,7 +27,7 @@ module.exports = {
         "contrastBorder": colors.ui.base['300'],
         "errorForeground": colors.ui.error.default,
         "selection.background": colors.ui.primary.default,
-    
+
         "button.background": colors.ui.primary.default,
         "button.hoverBackground": colors.ui.primary.shade,
     
@@ -110,6 +110,8 @@ module.exports = {
         "gitDecoration.ignoredResourceForeground": colors.ui.base['600'],
         "gitDecoration.conflictingResourceForeground": colors.ui.conflict.default,
     
+        "panel.background": colors.components.panel,
+
         "panel.border": colors.components.border,
         "panelTitle.activeBorder": colors.ui.primary.default,
     

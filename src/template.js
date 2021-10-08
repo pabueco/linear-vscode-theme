@@ -306,6 +306,7 @@ module.exports = {
             // "entity.name.function",
             "meta.method.declaration meta.function-call entity.name.function",
             "meta.method-call entity.name.function",
+            "meta.function-call entity.name.function",
             "variable.function",
             "support.function",
             "keyword.other.special-method"
@@ -391,6 +392,7 @@ module.exports = {
             "entity.name.type.class",
             "support.type",
             "support.class",
+            "new.expr meta.function-call entity.name.function",
             "markup.changed.git_gutter",
             "support.type.sys-types",
             "support.constant",

@@ -9,6 +9,18 @@ module.exports = {
   name: 'Dark Variant',
   type: 'dark',
   ...theme.make({
+    ui: {
+      cursor: {
+        default: "#00c4ff",
+      },
+      terminal: {
+        ansiGreen: "#5cc49f",
+        ansiBrightGreen: "#76e2b9",
+        ansiMagenta: "#b995f8",
+        ansiYellow: "#ffc66d",
+        ansiCyan: "#50d1eb",
+      }
+    },
     tokens: {
       entityClassType: "#b995f8",
       string: "#ffc66d",

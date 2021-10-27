@@ -38,6 +38,11 @@
                 "path": "./dist/linear-theme-dark-variant.json"
             },
             {
+                "label": "Linear Theme - Dark Rider (Preview)",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-dark-rider.json"
+            },
+            {
                 "label": "Linear Theme - Dawn",
                 "uiTheme": "vs-dark",
                 "path": "./dist/linear-theme-dawn.json"

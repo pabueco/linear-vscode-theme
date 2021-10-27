@@ -67,6 +67,7 @@ module.exports = {
     keywordControlOther: "#beb7ff",
     property: "#f3b7e9",
     propertyKey: "#b1c5ca",
+    keywordOperator: "#5da6b8",
     punctuation: "#5da6b8",
     htmlTagBrackets: "#74829e",
     htmlText: "#bdc4cc",

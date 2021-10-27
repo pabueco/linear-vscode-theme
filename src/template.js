@@ -142,6 +142,7 @@ module.exports = {
             "variable",
             "variable.other",
             "variable.parameter",
+            "entity.name.variable",
             "string constant.other.placeholder",
             "source.vue meta.object.member.ts meta.object.member.ts",
           ],
@@ -188,13 +189,13 @@ module.exports = {
             "storage.modifier"
           ],
           "settings": {
+            "fontStyle": "italic",
             "foreground": colors.tokens.keywordStorage
           }
         },
         {
           "name": "Keyword, Operator",
           "scope": [
-            "keyword.operator",
             "keyword.definition",
           ],
           "settings": {
@@ -241,12 +242,22 @@ module.exports = {
           }
         },
         {
+          "name": "Operator",
+          "scope": [
+            "keyword.operator"
+          ],
+          "settings": {
+            "fontStyle": "",
+            "foreground": colors.tokens.keywordOperator
+          }
+        },
+        {
           "name": "Operator, Misc",
           "scope": [
             "punctuation.definition.binding-pattern.object.js",
           ],
           "settings": {
-            "foreground": "#28bfda"
+            "foreground": colors.tokens.punctuation
           }
         },
         {
@@ -318,6 +329,7 @@ module.exports = {
             "meta.function-call entity.name.function",
             "variable.function",
             "support.function",
+            "entity.name.function",
             "keyword.other.special-method"
           ],
           "settings": {
@@ -330,7 +342,7 @@ module.exports = {
             "meta.function entity.name.function",
             "meta.method entity.name.method",
             "meta.method.declaration entity.name.function",
-            "meta.definition.method entity.name.function"
+            "meta.definition.method entity.name.function",
           ],
           "settings": {
             "foreground": colors.tokens.functionMethodDefinition
@@ -408,7 +420,7 @@ module.exports = {
             "entity.name.type.namespace",
             // Custom tags (like vue components)
             "meta.tag.custom entity.name.tag.html",
-            "source.vue invalid.illegal.unrecognized-tag.html"
+            "source.vue invalid.illegal.unrecognized-tag.html",
           ],
           "settings": {
             "fontStyle": "",
@@ -469,7 +481,8 @@ module.exports = {
           "scope": [
             "entity.other.attribute-name",
             "text.html.basic entity.other.attribute-name.html",
-            "text.html.basic entity.other.attribute-name"
+            "text.html.basic entity.other.attribute-name",
+            "meta.directive.vue keyword.control"
           ],
           "settings": {
             "fontStyle": "italic",

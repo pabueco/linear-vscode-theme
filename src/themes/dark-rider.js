@@ -1,8 +1,8 @@
 const { Theme } = require("../theme")
 
 const theme = new Theme('#5e6ad2', '#1F2023', {
-  saturation: 0.06,
-  brightnessStart: 0.13
+  saturation: 0.15,
+  brightnessStart: 0.15
 })
 
 module.exports = {

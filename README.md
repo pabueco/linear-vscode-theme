@@ -12,6 +12,7 @@ Dark themes:
 * Dawn
 * Pale
 * Midnight
+* Rider (A mix of the dark variant, the default theme from JetBrains Rider and some new colors)
 
 Light themes:
 * Light

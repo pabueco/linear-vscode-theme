@@ -477,7 +477,8 @@
         "keyword.control.at-rule"
       ],
       "settings": {
-        "fontStyle": "italic"
+        "fontStyle": "italic",
+        "foreground": "#1abdda"
       }
     },
     {

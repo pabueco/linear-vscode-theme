@@ -547,7 +547,8 @@ module.exports = {
             "keyword.control.at-rule"
           ],
           "settings": {
-            "fontStyle": "italic"
+            "fontStyle": "italic",
+            "foreground": colors.tokens.functionMethodCall
           }
         },
         {

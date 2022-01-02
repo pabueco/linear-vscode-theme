@@ -477,10 +477,12 @@ module.exports = {
         {
           "name": "Language methods",
           "scope": [
-            "variable.language"
+            "variable.language",
+            "variable.language.this",
+            "meta variable.language.this",
           ],
           "settings": {
-            // "fontStyle": "italic",
+            "fontStyle": hasItalics ? "italic" : "normal",
             "foreground": colors.tokens.this
           }
         },

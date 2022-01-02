@@ -408,9 +408,12 @@
     {
       "name": "Language methods",
       "scope": [
-        "variable.language"
+        "variable.language",
+        "variable.language.this",
+        "meta variable.language.this"
       ],
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#0093ad"
       }
     },

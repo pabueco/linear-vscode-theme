@@ -1,5 +1,5 @@
 {
-  "name": "Linear Theme - Dark Variant",
+  "name": "Linear Theme - Dark (No italics)",
   "type": "dark",
   "colors": {
     "terminal.ansiGreen": "#4CB782",
@@ -91,7 +91,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "normal",
         "foreground": "#8b8e98"
       }
     },
@@ -148,7 +148,7 @@
         "meta storage.type"
       ],
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "normal",
         "foreground": "#7e89ec"
       }
     },
@@ -245,7 +245,7 @@
         "keyword.other"
       ],
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "normal",
         "foreground": "#beb7ff"
       }
     },
@@ -262,7 +262,7 @@
         "keyword.other.namespace"
       ],
       "settings": {
-        "fontStyle": "italic"
+        "fontStyle": "normal"
       }
     },
     {
@@ -324,7 +324,7 @@
         "support.constant.property-value"
       ],
       "settings": {
-        "foreground": "#97D484"
+        "foreground": "#ffbf71"
       }
     },
     {
@@ -338,7 +338,7 @@
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#ffd18b"
+        "foreground": "#97D484"
       }
     },
     {
@@ -347,7 +347,7 @@
         "string punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#ffcb8b9d"
+        "foreground": "#95d581bd"
       }
     },
     {
@@ -379,7 +379,7 @@
         "meta.use.php"
       ],
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "normal",
         "foreground": "#88e6d6"
       }
     },
@@ -389,7 +389,7 @@
         "meta.type.tuple meta.brace"
       ],
       "settings": {
-        "fontStyle": "italic"
+        "fontStyle": "normal"
       }
     },
     {
@@ -423,7 +423,7 @@
         "meta.directive.vue keyword.control"
       ],
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "normal",
         "foreground": "#cba0ff"
       }
     },
@@ -483,7 +483,7 @@
         "keyword.control.at-rule"
       ],
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "normal",
         "foreground": "#1abdda"
       }
     },
@@ -521,7 +521,7 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "foreground": "#59b13e"
+        "foreground": "#d3782e"
       }
     },
     {
@@ -530,7 +530,7 @@
         "source.env"
       ],
       "settings": {
-        "foreground": "#ffd18b"
+        "foreground": "#97D484"
       }
     },
     {
@@ -558,7 +558,7 @@
         "markup.fenced_code.block.markdown"
       ],
       "settings": {
-        "foreground": "#ffd18b"
+        "foreground": "#97D484"
       }
     }
   ]

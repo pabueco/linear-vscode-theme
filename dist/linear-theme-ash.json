@@ -1,5 +1,6 @@
 {
-  "type": "dark",
+  "name": "Linear Theme - Ash",
+  "type": "light",
   "colors": {
     "terminal.ansiGreen": "#2d9963",
     "terminal.ansiBrightGreen": "#319b0f",
@@ -86,6 +87,8 @@
       "name": "Comment",
       "scope": [
         "comment",
+        "comment.block",
+        "comment.line",
         "punctuation.definition.comment"
       ],
       "settings": {
@@ -142,7 +145,8 @@
       "scope": [
         "keyword",
         "storage.type",
-        "storage.modifier"
+        "storage.modifier",
+        "meta storage.type"
       ],
       "settings": {
         "fontStyle": "italic",
@@ -242,6 +246,7 @@
         "keyword.other"
       ],
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#8072ff"
       }
     },
@@ -413,6 +418,7 @@
       "name": "Attributes, HTML Attributes",
       "scope": [
         "entity.other.attribute-name",
+        "meta entity.other.attribute-name",
         "text.html.basic entity.other.attribute-name.html",
         "text.html.basic entity.other.attribute-name",
         "meta.directive.vue keyword.control"
@@ -556,6 +562,5 @@
         "foreground": "#319b0f"
       }
     }
-  ],
-  "name": "Linear Theme - Light"
+  ]
 }

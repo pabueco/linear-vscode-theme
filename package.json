@@ -33,14 +33,29 @@
                 "path": "./dist/linear-theme-dark.json"
             },
             {
+                "label": "Linear Theme - Dark (No Italics)",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-dark-no-italics.json"
+            },
+            {
                 "label": "Linear Theme - Dark Variant",
                 "uiTheme": "vs-dark",
                 "path": "./dist/linear-theme-dark-variant.json"
             },
             {
-                "label": "Linear Theme - Rider (Preview)",
+                "label": "Linear Theme - Dark Variant (No italics)",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-dark-variant-no-italics.json"
+            },
+            {
+                "label": "Linear Theme - Rider",
                 "uiTheme": "vs-dark",
                 "path": "./dist/linear-theme-dark-rider.json"
+            },
+            {
+              "label": "Linear Theme - Rider (No Italics)",
+              "uiTheme": "vs-dark",
+              "path": "./dist/linear-theme-dark-rider-no-italics.json"
             },
             {
                 "label": "Linear Theme - Dawn",
@@ -48,9 +63,19 @@
                 "path": "./dist/linear-theme-dawn.json"
             },
             {
+                "label": "Linear Theme - Dawn (No italics)",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-dawn-no-italics.json"
+            },
+            {
                 "label": "Linear Theme - Pale",
                 "uiTheme": "vs-dark",
                 "path": "./dist/linear-theme-pale.json"
+            },
+            {
+                "label": "Linear Theme - Pale (No italics)",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-pale-no-italics.json"
             },
             {
                 "label": "Linear Theme - Midnight",
@@ -58,14 +83,29 @@
                 "path": "./dist/linear-theme-midnight.json"
             },
             {
+                "label": "Linear Theme - Midnight (No italics)",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-midnight-no-italics.json"
+            },
+            {
                 "label": "Linear Theme - Light",
                 "uiTheme": "vs",
                 "path": "./dist/linear-theme-light.json"
             },
             {
+                "label": "Linear Theme - Light (No italics)",
+                "uiTheme": "vs",
+                "path": "./dist/linear-theme-light-no-italics.json"
+            },
+            {
                 "label": "Linear Theme - Ash",
                 "uiTheme": "vs",
                 "path": "./dist/linear-theme-ash.json"
+            },
+            {
+                "label": "Linear Theme - Ash (No italics)",
+                "uiTheme": "vs",
+                "path": "./dist/linear-theme-ash-no-italics.json"
             }
         ]
     },

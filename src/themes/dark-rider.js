@@ -1,14 +1,13 @@
 const { Theme } = require("../theme")
 
-const theme = new Theme('#5e6ad2', '#1F2023', {
-  saturation: 0.15,
-  brightnessStart: 0.15
-})
-
-module.exports = {
-  name: 'Dark Variant',
-  type: 'dark',
-  ...theme.make({
+const theme = new Theme()
+  .setName('Dark Rider')
+  .setColors('#5e6ad2', '#1F2023')
+  .modifyColorGeneration({
+    saturation: 0.15,
+    brightnessStart: 0.15
+  })
+  .overrideColors({
     ui: {
       cursor: {
         default: "#00c4ff",
@@ -41,5 +40,6 @@ module.exports = {
       tag: "#86dada",
       attribute: "#e86888",
     }
-  }),
-}
+  })
+
+module.exports = theme

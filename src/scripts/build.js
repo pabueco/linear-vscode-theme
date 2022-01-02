@@ -25,8 +25,6 @@ for (const theme of themes) {
 
   const generatedTheme = template.render(themeConfig)
 
-  generatedTheme.name = `Linear Theme - ${themeConfig.name}`
-
   fs.writeFileSync(
     path.resolve(dirs.dist, `${themeName}-${theme.name}.json`), 
     JSON.stringify(generatedTheme, null, 2),

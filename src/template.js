@@ -1,17 +1,21 @@
-const { cloneDeep, merge } = require('lodash')
+const { cloneDeep } = require('lodash')
 const defaultColors = require('./default')
+const { Theme } = require('./theme')
 
 module.exports = {
-  render: (themeColors) => {
+  /**
+   * 
+   * @param {Theme} theme 
+   * @returns 
+   */
+  render: (theme) => {
 
-    /**
-     * @type defaultColors
-     */
-    const colors = cloneDeep(themeColors)
-    // const colors = merge({}, defaultColors, themeColors)
-  
+    const colors = theme.make()
+    const hasItalics = theme.themeOptions.italics
+
     return {
-      type: colors.type,
+      name: `Linear Theme - ${theme.name}`,
+      type: theme.type,
       colors: {
         "terminal.ansiGreen": colors.ui.terminal.ansiGreen,
         "terminal.ansiBrightGreen": colors.ui.terminal.ansiBrightGreen,
@@ -129,10 +133,12 @@ module.exports = {
           "name": "Comment",
           "scope": [
             "comment",
+            "comment.block",
+            "comment.line",
             "punctuation.definition.comment"
           ],
           "settings": {
-            "fontStyle": "italic",
+            "fontStyle": hasItalics ? "italic" : "normal",
             "foreground": colors.tokens.comment
           }
         },
@@ -186,10 +192,11 @@ module.exports = {
           "scope": [
             "keyword",
             "storage.type",
-            "storage.modifier"
+            "storage.modifier",
+            "meta storage.type",
           ],
           "settings": {
-            "fontStyle": "italic",
+            "fontStyle": hasItalics ? "italic" : "normal",
             "foreground": colors.tokens.keywordStorage
           }
         },
@@ -290,6 +297,7 @@ module.exports = {
             "keyword.other"
           ],
           "settings": {
+            "fontStyle": hasItalics ? "italic" : "normal",
             "foreground": colors.tokens.keywordControlOther
           }
         },
@@ -306,7 +314,7 @@ module.exports = {
             "keyword.other.namespace",
           ],
           "settings": {
-            "fontStyle": "italic",
+            "fontStyle": hasItalics ? "italic" : "normal",
           }
         },
         {
@@ -440,7 +448,7 @@ module.exports = {
             // "meta.type.tuple meta.brace",
           ],
           "settings": {
-            "fontStyle": "italic",
+            "fontStyle": hasItalics ? "italic" : "normal",
             // "foreground": "#9ef0ff"
             "foreground": colors.tokens.entityClassType
           }
@@ -451,7 +459,7 @@ module.exports = {
             "meta.type.tuple meta.brace",
           ],
           "settings": {
-            "fontStyle": "italic",
+            "fontStyle": hasItalics ? "italic" : "normal",
           }
         },
         {
@@ -480,12 +488,13 @@ module.exports = {
           "name": "Attributes, HTML Attributes",
           "scope": [
             "entity.other.attribute-name",
+            "meta entity.other.attribute-name",
             "text.html.basic entity.other.attribute-name.html",
             "text.html.basic entity.other.attribute-name",
             "meta.directive.vue keyword.control"
           ],
           "settings": {
-            "fontStyle": "italic",
+            "fontStyle": hasItalics ? "italic" : "normal",
             "foreground": colors.tokens.attribute
           }
         },
@@ -547,7 +556,7 @@ module.exports = {
             "keyword.control.at-rule"
           ],
           "settings": {
-            "fontStyle": "italic",
+            "fontStyle": hasItalics ? "italic" : "normal",
             "foreground": colors.tokens.functionMethodCall
           }
         },

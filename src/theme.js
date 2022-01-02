@@ -5,46 +5,56 @@ const defaultColors = require('./default')
 
 class Theme {
 
+  name = 'Default'
+  type = 'dark'
+  primary
+  base
+
   primaryColor
   baseColor
-  options
 
-  constructor (primary, base, options = {}) {
-    this.primaryColor = new TinyColor(primary)
-    this.baseColor = new TinyColor(base)
-
-    this.options = defaults(options, {
-      saturationOffset: 0,
-      brightnessStart: 0.16,
-      brightnessStep: 0.04,
-      saturation: 0.15,
-      invert: false,
-      colorTransform: null,
-      opacityModifier: 1
-    })
+  themeOptions = {
+    italics: true
   }
+  colorOptions = {
+    saturationOffset: 0,
+    brightnessStart: 0.16,
+    brightnessStep: 0.04,
+    saturation: 0.15,
+    invert: false,
+    colorTransform: null,
+    opacityModifier: 1
+  }
+  colorOverrides = {}
 
-  makeShade(steps, color = this.baseColor, s = this.options.saturation, l = null) {
+  constructor () {}
+
+  makeShade(
+    steps, 
+    color = this.baseColor, 
+    s = this.colorOptions.saturation, 
+    l = null
+  ) {
     const c = color.clone()
     const hsl = c.toHsl()
-    hsl.s = this.options.saturation
-    hsl.l = l || this.options.brightnessStart + (steps * this.options.brightnessStep)
+    hsl.s = s
+    hsl.l = l || this.colorOptions.brightnessStart + (steps * this.colorOptions.brightnessStep)
 
-    if (this.options.invert) {
+    if (this.colorOptions.invert) {
       hsl.l = 1 - hsl.l
     }
 
     return new TinyColor(hsl)
   }
 
-  make(overrides = {}) {
+  make() {
 
-    const adjustedColors = this.options.colorTransform ? mapValuesDeep(
+    const adjustedColors = this.colorOptions.colorTransform ? mapValuesDeep(
       cloneDeep(defaultColors),
       (v) => {
         const c = new TinyColor(v)
         if (!c.isValid) return v
-        return this.options.colorTransform(c).toHexString()
+        return this.colorOptions.colorTransform(c).toHexString()
       },
       { leavesOnly: true }
     ) : defaultColors;
@@ -56,9 +66,9 @@ class Theme {
         },
         primary: {
           default: this.primaryColor.toHexString(),
-          shade: (this.options.invert ? this.primaryColor.darken(5) : this.primaryColor.brighten(8)).toHexString(),
-          light: (this.options.invert ? this.primaryColor.darken(10) : this.primaryColor.brighten(16)).toHexString(),
-          lighter: (this.options.invert ? this.primaryColor.darken(15) : this.primaryColor.brighten(24)).toHexString(),
+          shade: (this.colorOptions.invert ? this.primaryColor.darken(5) : this.primaryColor.brighten(8)).toHexString(),
+          light: (this.colorOptions.invert ? this.primaryColor.darken(10) : this.primaryColor.brighten(16)).toHexString(),
+          lighter: (this.colorOptions.invert ? this.primaryColor.darken(15) : this.primaryColor.brighten(24)).toHexString(),
         },
         base: {
           "0": this.makeShade(0).toHexString(),
@@ -74,11 +84,11 @@ class Theme {
           "900": this.makeShade(9).toHexString(),
         },
         cursor: {
-          default: (this.options.invert ? this.primaryColor.clone().darken(21).desaturate(10) : this.primaryColor.clone().brighten(42).saturate(10)).toHexString()
+          default: (this.colorOptions.invert ? this.primaryColor.clone().darken(21).desaturate(10) : this.primaryColor.clone().brighten(42).saturate(10)).toHexString()
         },
         selection: {
-          background: this.primaryColor.saturate(25).brighten(5).setAlpha((this.options.brightnessStart + 0.25) * this.options.opacityModifier).toHex8String(),
-          highlightBackground: this.primaryColor.saturate(25).brighten(0).setAlpha((this.options.brightnessStart + 0.1) * this.options.opacityModifier).toHex8String(),
+          background: this.primaryColor.saturate(25).brighten(5).setAlpha((this.colorOptions.brightnessStart + 0.25) * this.colorOptions.opacityModifier).toHex8String(),
+          highlightBackground: this.primaryColor.saturate(25).brighten(0).setAlpha((this.colorOptions.brightnessStart + 0.1) * this.colorOptions.opacityModifier).toHex8String(),
           highlightBorder: this.primaryColor.saturate(25).brighten(5).toHex8String(),
         },
       },
@@ -91,7 +101,73 @@ class Theme {
       components: {
         border: this.makeShade(1.5).toHexString(),
       }
-    }, overrides)
+    }, this.colorOverrides)
+  }
+
+  customize(values = {}) {
+    for (const [key, value] of Object.entries(values)) {
+      if (typeof this[key] === 'object') {
+        merge(this[key], value)
+      } else {
+        this[key] = value
+      }
+    }
+
+    return this
+  }
+
+  static from(theme) {
+    return new Theme(
+      theme.name,
+      theme.type,
+      theme.primary,
+      theme.base,
+      theme.colorOptions,
+      theme.themeOptions
+    )
+  }
+
+  extends(theme) {
+    merge(this, theme)
+
+    return this
+  }
+
+  setName(name) {
+    this.name = name
+
+    return this
+  }
+
+  setType(type) {
+    this.type = type
+
+    return this
+  }
+
+  setColors(primary, base) {
+    this.primary = primary
+    this.base = base
+
+    this.primaryColor = new TinyColor(primary)
+    this.baseColor = new TinyColor(base)
+
+    return this
+  }
+  modifyColorGeneration(options =  {}) {
+    merge(this.colorOptions, options || {})
+
+    return this
+  }
+  overrideColors(colors = {}) {
+    merge(this.colorOverrides, colors || {})
+
+    return this
+  }
+  setOptions(options = {}) {
+    merge(this.themeOptions, options || {})
+
+    return this
   }
 }
 

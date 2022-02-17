@@ -126,7 +126,8 @@ module.exports = {
     
         "badge.background": colors.ui.primary.default,
     
-        "statusBar.background": colors.ui.base['100'],
+        "statusBar.background": colors.components.panel,
+        "statusBar.foreground": colors.ui.text.default,
       },
       tokenColors: [
         {

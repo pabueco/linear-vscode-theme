@@ -3,7 +3,7 @@
   "type": "dark",
   "colors": {
     "terminal.ansiGreen": "#4CB782",
-    "terminal.ansiBrightGreen": "#97D484",
+    "terminal.ansiBrightGreen": "#a2d484",
     "terminal.ansiMagenta": "#cba0ff",
     "terminal.ansiYellow": "#ffcc6d",
     "terminal.ansiCyan": "#26B5CE",
@@ -17,8 +17,8 @@
     "button.background": "#7d57c1",
     "button.hoverBackground": "#916bd5",
     "progressBar.background": "#916bd5",
-    "input.background": "#49506e",
-    "input.border": "#414762",
+    "input.background": "#393f56",
+    "input.border": "#49506e",
     "inputOption.activeBackground": "#7d57c1",
     "inputValidation.errorBorder": "#eb5757",
     "editor.background": "#292d3d",
@@ -76,10 +76,12 @@
     "gitDecoration.untrackedResourceForeground": "#4CB782",
     "gitDecoration.ignoredResourceForeground": "#5a6287",
     "gitDecoration.conflictingResourceForeground": "#F2994A",
+    "diffEditor.insertedTextBackground": "#85c75e26",
+    "diffEditor.removedTextBackground": "#e6292926",
     "panel.border": "#353a50",
     "panelTitle.activeBorder": "#7d57c1",
     "badge.background": "#7d57c1",
-    "statusBar.background": "#313649"
+    "statusBar.foreground": "#ced1de"
   },
   "tokenColors": [
     {
@@ -242,7 +244,8 @@
       "scope": [
         "keyword.control",
         "entity.name.type.namespace",
-        "keyword.other"
+        "keyword.other",
+        "meta.directive support.function"
       ],
       "settings": {
         "fontStyle": "italic",
@@ -338,7 +341,7 @@
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#97D484"
+        "foreground": "#a2d484"
       }
     },
     {
@@ -423,7 +426,8 @@
         "meta entity.other.attribute-name",
         "text.html.basic entity.other.attribute-name.html",
         "text.html.basic entity.other.attribute-name",
-        "meta.directive.vue keyword.control"
+        "meta.directive.vue keyword.control",
+        "meta.directive entity.name.type"
       ],
       "settings": {
         "fontStyle": "italic",
@@ -448,7 +452,7 @@
         "markup.inserted"
       ],
       "settings": {
-        "foreground": "#97D484"
+        "foreground": "#a2d484"
       }
     },
     {
@@ -533,7 +537,7 @@
         "source.env"
       ],
       "settings": {
-        "foreground": "#97D484"
+        "foreground": "#a2d484"
       }
     },
     {
@@ -561,7 +565,7 @@
         "markup.fenced_code.block.markdown"
       ],
       "settings": {
-        "foreground": "#97D484"
+        "foreground": "#a2d484"
       }
     }
   ]

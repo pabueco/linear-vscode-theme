@@ -3,7 +3,7 @@
   "type": "dark",
   "colors": {
     "terminal.ansiGreen": "#4CB782",
-    "terminal.ansiBrightGreen": "#97D484",
+    "terminal.ansiBrightGreen": "#a2d484",
     "terminal.ansiMagenta": "#cba0ff",
     "terminal.ansiYellow": "#ffcc6d",
     "terminal.ansiCyan": "#26B5CE",
@@ -17,8 +17,8 @@
     "button.background": "#5e6ad2",
     "button.hoverBackground": "#727ee6",
     "progressBar.background": "#727ee6",
-    "input.background": "#46484e",
-    "input.border": "#3c3e44",
+    "input.background": "#323439",
+    "input.border": "#46484e",
     "inputOption.activeBackground": "#5e6ad2",
     "inputValidation.errorBorder": "#eb5757",
     "editor.background": "#1f2023",
@@ -76,10 +76,12 @@
     "gitDecoration.untrackedResourceForeground": "#4CB782",
     "gitDecoration.ignoredResourceForeground": "#595c64",
     "gitDecoration.conflictingResourceForeground": "#F2994A",
+    "diffEditor.insertedTextBackground": "#85c75e26",
+    "diffEditor.removedTextBackground": "#e6292926",
     "panel.border": "#2e2f33",
     "panelTitle.activeBorder": "#5e6ad2",
     "badge.background": "#5e6ad2",
-    "statusBar.background": "#292a2e"
+    "statusBar.foreground": "#c1c3c8"
   },
   "tokenColors": [
     {
@@ -242,7 +244,8 @@
       "scope": [
         "keyword.control",
         "entity.name.type.namespace",
-        "keyword.other"
+        "keyword.other",
+        "meta.directive support.function"
       ],
       "settings": {
         "fontStyle": "normal",
@@ -423,7 +426,8 @@
         "meta entity.other.attribute-name",
         "text.html.basic entity.other.attribute-name.html",
         "text.html.basic entity.other.attribute-name",
-        "meta.directive.vue keyword.control"
+        "meta.directive.vue keyword.control",
+        "meta.directive entity.name.type"
       ],
       "settings": {
         "fontStyle": "normal",
@@ -448,7 +452,7 @@
         "markup.inserted"
       ],
       "settings": {
-        "foreground": "#97D484"
+        "foreground": "#a2d484"
       }
     },
     {

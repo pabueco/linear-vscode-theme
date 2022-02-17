@@ -17,8 +17,8 @@
     "button.background": "#5e6ad2",
     "button.hoverBackground": "#727ee6",
     "progressBar.background": "#727ee6",
-    "input.background": "#43495b",
-    "input.border": "#3b404f",
+    "input.background": "#323643",
+    "input.border": "#43495b",
     "inputOption.activeBackground": "#5e6ad2",
     "inputValidation.errorBorder": "#eb5757",
     "editor.background": "#21232c",
@@ -76,10 +76,12 @@
     "gitDecoration.untrackedResourceForeground": "#5cc49f",
     "gitDecoration.ignoredResourceForeground": "#555c72",
     "gitDecoration.conflictingResourceForeground": "#F2994A",
+    "diffEditor.insertedTextBackground": "#85c75e26",
+    "diffEditor.removedTextBackground": "#e6292926",
     "panel.border": "#2e323e",
     "panelTitle.activeBorder": "#5e6ad2",
     "badge.background": "#5e6ad2",
-    "statusBar.background": "#292d38"
+    "statusBar.foreground": "#c1c5d1"
   },
   "tokenColors": [
     {
@@ -242,7 +244,8 @@
       "scope": [
         "keyword.control",
         "entity.name.type.namespace",
-        "keyword.other"
+        "keyword.other",
+        "meta.directive support.function"
       ],
       "settings": {
         "fontStyle": "italic",
@@ -423,7 +426,8 @@
         "meta entity.other.attribute-name",
         "text.html.basic entity.other.attribute-name.html",
         "text.html.basic entity.other.attribute-name",
-        "meta.directive.vue keyword.control"
+        "meta.directive.vue keyword.control",
+        "meta.directive entity.name.type"
       ],
       "settings": {
         "fontStyle": "italic",
@@ -448,7 +452,7 @@
         "markup.inserted"
       ],
       "settings": {
-        "foreground": "#97D484"
+        "foreground": "#a2d484"
       }
     },
     {

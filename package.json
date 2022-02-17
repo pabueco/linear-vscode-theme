@@ -2,7 +2,7 @@
     "name": "linear-theme",
     "displayName": "Linear Theme",
     "description": "A set of pleasant themes inspired by Linear",
-    "version": "0.6.1",
+    "version": "0.7.0",
     "publisher": "pabue",
     "license": "MIT",
     "repository": {
@@ -53,9 +53,9 @@
                 "path": "./dist/linear-theme-dark-rider.json"
             },
             {
-              "label": "Linear Theme - Rider (No Italics)",
-              "uiTheme": "vs-dark",
-              "path": "./dist/linear-theme-dark-rider-no-italics.json"
+                "label": "Linear Theme - Rider (No Italics)",
+                "uiTheme": "vs-dark",
+                "path": "./dist/linear-theme-dark-rider-no-italics.json"
             },
             {
                 "label": "Linear Theme - Dawn",

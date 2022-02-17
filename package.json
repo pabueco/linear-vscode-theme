@@ -113,7 +113,8 @@
         "lodash": "^4.17.21"
     },
     "scripts": {
-        "dev": "nodemon src/scripts/build.js --ignore dist/"
+        "dev": "nodemon src/scripts/build.js --ignore dist/",
+        "build": "node src/scripts/build.js"
     },
     "devDependencies": {
         "@ctrl/tinycolor": "^3.4.0",

@@ -39,7 +39,7 @@ module.exports = {
     },
     terminal: {
       ansiGreen: "#4CB782",
-      ansiBrightGreen: "#97D484",
+      ansiBrightGreen: "#a2d484",
       ansiMagenta: "#cba0ff",
       ansiYellow: "#ffcc6d",
       ansiCyan: "#26B5CE",
@@ -47,7 +47,7 @@ module.exports = {
     },
     git: {
       inserted: {
-        default: "#97D484",
+        default: "#a2d484",
       },
       modified: {
         default: "#26B5CE",
@@ -74,7 +74,7 @@ module.exports = {
     functionMethodCall: "#1abdda",
     functionMethodDefinition: "#61e6fd",
     constNumber: "#ffbf71",
-    string: "#97D484",
+    string: "#a2d484",
     stringPunctuation: "#95d581bd",
     entityClassType: "#88e6d6",
     namespaceInherit: "#9ebecc",

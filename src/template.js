@@ -1,3 +1,4 @@
+const { TinyColor } = require('@ctrl/tinycolor')
 const { cloneDeep } = require('lodash')
 const defaultColors = require('./default')
 const { Theme } = require('./theme')
@@ -118,6 +119,9 @@ module.exports = {
         "gitDecoration.untrackedResourceForeground": colors.ui.terminal.ansiGreen,
         "gitDecoration.ignoredResourceForeground": colors.ui.base['600'],
         "gitDecoration.conflictingResourceForeground": colors.ui.conflict.default,
+
+        "diffEditor.insertedTextBackground": new TinyColor(colors.ui.git.inserted.default).darken(10).setAlpha(0.15).toHex8String(),
+        "diffEditor.removedTextBackground": new TinyColor(colors.ui.git.deleted.default).darken(10).setAlpha(0.15).toHex8String(),
     
         "panel.background": colors.components.panel,
 

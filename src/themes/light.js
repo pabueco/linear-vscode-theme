@@ -14,9 +14,9 @@ const theme = new Theme()
     colorTransform: (color) => {
       let c = color.clone()
       
-      while (readability(c, '#fff') < 3.55) {
+      while (readability(c, '#fff') < 3.75) {
         c = c.darken(0.5)
-        c = c.saturate(0.5)
+        c = c.saturate(1)
       }
 
       return new TinyColor(c)
@@ -29,7 +29,14 @@ const theme = new Theme()
       }
     },
     tokens: {
-      property: '#c638a2'
+      property: '#c638a2',
+      functionMethodCall: '#009FC7',
+      functionMethodDefinition: '#009FC7',
+      string: '#50a810',
+      stringPunctuation: '#4fa810ab',
+      tag: '#3f6cbf',
+      entityClassType: '#3faa9c',
+      propertyKey: "#738083",
     }
   })
 

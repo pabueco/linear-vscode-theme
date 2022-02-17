@@ -295,7 +295,8 @@ module.exports = {
           "scope": [
             "keyword.control",
             "entity.name.type.namespace",
-            "keyword.other"
+            "keyword.other",
+            "meta.directive support.function"
           ],
           "settings": {
             "fontStyle": hasItalics ? "italic" : "normal",
@@ -494,7 +495,8 @@ module.exports = {
             "meta entity.other.attribute-name",
             "text.html.basic entity.other.attribute-name.html",
             "text.html.basic entity.other.attribute-name",
-            "meta.directive.vue keyword.control"
+            "meta.directive.vue keyword.control",
+            "meta.directive entity.name.type"
           ],
           "settings": {
             "fontStyle": hasItalics ? "italic" : "normal",

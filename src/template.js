@@ -37,8 +37,8 @@ module.exports = {
     
         "progressBar.background": colors.ui.primary.shade,
     
-        "input.background": colors.ui.base['400'],
-        "input.border": colors.ui.base['300'],
+        "input.background": colors.ui.base['200'],
+        "input.border": colors.ui.base['400'],
         "inputOption.activeBackground": colors.ui.primary.default,
         "inputValidation.errorBorder": colors.ui.error.default,
     
